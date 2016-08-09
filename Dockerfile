@@ -6,7 +6,7 @@ COPY src /home/root/javahelloworld/src
 #RUN javac HelloWorld.java
 WORKDIR /home/root/javahelloworld
 RUN mkdir bin
-RUN mkdir data
+RUN mkdir data_dir
 RUN javac -d bin src/HelloWorld.java
 
 #ENTRYPOINT ["java", "HelloWorld"]
